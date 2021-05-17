@@ -1,0 +1,70 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    min-height: 100vh;
+    background-color: #222;
+    opacity: 0.9;
+    justify-content: center;
+}
+
+header {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    position: fixed;
+    height: 69px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0%;
+    left: 0%;
+    border-bottom: 1px solid #fff;
+}
+
+nav img.logo {
+    height: 50px;
+    margin-left: 10px;
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: flex;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 15px;
+}
+
+.mission {
+    background-image: url(./images/mission-background.jpg);
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 700px;
+    background-size: cover;
+    margin: 70px auto;
+
+}
+
+.mission div {
+    background-color: #222;
+}
