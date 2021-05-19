@@ -8,11 +8,166 @@ body {
    font-family: Arial, Helvetica, sans-serif;
    font-size: 22px;
    background-color: #222;
+   min-width: 100%;
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
 
 }
 
-.container {
+nav {
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    height: 69px;
+}
+
+.logo {
+    height: 50px;
+    margin-left: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    top: 0;
+    width: 100%;
+    margin: 1px;
+    padding: 1px;
+}
+
+nav ul li {
+    float: right;
+}
+
+nav ul li a {
+    text-decoration: none;
+    margin-left: 10px;
+    color: #fff;
+}
+
+nav ul li a:last-child {
+    margin-right: 10px;
+} 
+
+/* Main */
+
+main {
+  justify-content: center; 
+  align-items: center;
+}
+
+.mission-container {
     width: 1200px;
+    height: 700px;
+    display: flex;
+    background-image: url(./images/mission-background.jpg);
+    text-align: center;
+    margin-top: 70px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.mission-text {
     margin: auto;
+    width: 100%;
+    background-color: black;
+    line-height: 50px;
+
+}
+
+.menu-container {
+    max-width: 1000px;
+    height: 700px;
+    margin-top: 100px;
+    margin-left: 100px;
     text-align: center;
 }
+
+.menu-text {
+    width: 100%;
+    margin-bottom: 40px;
+    line-height: 50px;
+    
+}
+
+.top-teas {
+    display: flex ;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.top-teas img {
+    width: 300px;
+    height: 200px;
+
+}
+
+.locations-container {
+    width: 1200px;
+    min-height: 500px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-image: url(./images/locations-background.jpg);
+
+}
+
+.locations-title {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.locations-title  h2 {
+    display: flex;
+    justify-items: center;
+}
+
+.main-locations {
+    display: flex;
+    flex-flow: row wrap;
+    justify-items: center;
+    align-items: center;
+    left: 0;
+}
+
+.main-locations div {
+    background-color: #222;
+    opacity: 1;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.main-locations div h3,h4 {
+    margin: 20px;
+}
+
+footer{
+    height: 300px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+footer h2 {
+    margin-bottom: 50px;
+}
+
+footer h4 {
+    margin-bottom: 30px;
+}
+
+.copyright {
+    margin-top: 100px;
+    margin-left: -1000px;
+}
+
+
+
+
